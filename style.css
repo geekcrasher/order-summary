@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+    background: url(./images/pattern-background-desktop.svg) no-repeat var(--pale-blue);
+    background-size: contain;
+}
+
+.container {
+	padding: 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 30px 8px rgb(214, 225, 255);
+}
+
+.content {
+    max-width: 440px;
+    height: 675px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.content .hero {
+    max-width: 100%;
+    background-size: cover;
+}
+
+.content .order-summary {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 2.5rem 3rem 1rem 3rem;
+    text-align: center;
+}
+
+.order-summary h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: var(--dark-blue)
+}
+
+.order-summary p {
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+}
+
+.plan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 3rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+}
+
+.plan > img {
+    margin-right: 1.25rem;
+}
+
+.subscription p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+}
+
+.subscription p:first-child {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.subscription .price {
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.subscription a {
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    font: 700 0.9rem 'Red Hat Display', sans-serif;
+}
+
+.content .button {
+    margin: 2rem 3rem;
+}
+
+.button .payment {
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    font: 700 1rem 'Red Hat Display', sans-serif;
+    box-shadow: 0 20px 15px rgb(214, 225, 255);
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+}
+
+.button .cancel {
+    text-align: center;
+    margin-top: 2rem;
+    font: 700 1rem 'Red Hat Display', sans-serif;
+    color: var(--desaturated-blue);
+}
